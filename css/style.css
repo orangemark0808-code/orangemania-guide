@@ -1,0 +1,224 @@
+/* OrangeMania Guide - 共通スタイル */
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=DM+Mono:wght@400;500&display=swap');
+
+:root {
+  --color-accent: #FF7F00;
+  --color-bg: #FAF8F4;
+  --color-text: #3a2a1a;
+  --color-code-bg: #f0ede8;
+  --radius: 14px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-family: 'Nunito', sans-serif;
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+}
+
+.container {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 0 24px 80px;
+}
+
+/* ナビゲーションバー */
+.navbar {
+  border-bottom: 1px solid #e8e2d8;
+  padding: 20px 24px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 48px;
+}
+
+.navbar .logo {
+  font-weight: 800;
+  font-size: 1.1rem;
+  color: var(--color-accent);
+  text-decoration: none;
+}
+
+.navbar .page-title {
+  font-size: 0.95rem;
+  color: var(--color-text);
+  opacity: 0.7;
+}
+
+/* 見出し */
+h1 {
+  font-size: 2rem;
+  font-weight: 800;
+  margin-bottom: 16px;
+}
+
+h2 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-top: 48px;
+  margin-bottom: 16px;
+}
+
+p {
+  margin: 0 0 16px;
+}
+
+/* ラベル（英字大文字 + モノスペース） */
+.label {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-accent);
+  font-weight: 500;
+}
+
+/* ボタン */
+.btn {
+  display: inline-block;
+  background: var(--color-accent);
+  color: #fff;
+  text-decoration: none;
+  padding: 14px 28px;
+  border-radius: var(--radius);
+  font-weight: 700;
+  box-shadow: none;
+  border: none;
+  transition: opacity 0.15s ease;
+}
+
+.btn:hover {
+  opacity: 0.85;
+}
+
+.btn-outline {
+  display: inline-block;
+  background: transparent;
+  color: var(--color-accent);
+  text-decoration: none;
+  padding: 12px 24px;
+  border-radius: var(--radius);
+  font-weight: 700;
+  border: 1.5px solid var(--color-accent);
+}
+
+/* ターゲット読者リスト */
+.audience-list {
+  list-style: none;
+  padding: 0;
+  margin: 24px 0;
+}
+
+.audience-list li {
+  padding: 16px 20px;
+  background: #fff;
+  border-radius: var(--radius);
+  border: 1px solid #eee6da;
+  margin-bottom: 12px;
+}
+
+/* アプリカード */
+.card-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+  margin: 24px 0;
+}
+
+.card {
+  background: #fff;
+  border: 1px solid #eee6da;
+  border-radius: var(--radius);
+  padding: 24px;
+  box-shadow: none;
+}
+
+.card h3 {
+  margin: 0 0 8px;
+  font-size: 1.15rem;
+}
+
+.card p {
+  opacity: 0.8;
+  margin-bottom: 20px;
+}
+
+/* ステップセクション */
+.step {
+  margin-top: 56px;
+  padding-top: 32px;
+  border-top: 1px solid #eee6da;
+}
+
+.step:first-of-type {
+  border-top: none;
+  padding-top: 0;
+}
+
+.step-number {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.8rem;
+  letter-spacing: 0.08em;
+  color: var(--color-accent);
+  font-weight: 500;
+  display: block;
+  margin-bottom: 8px;
+}
+
+/* コードブロック */
+.code-block {
+  position: relative;
+  background: var(--color-code-bg);
+  border-radius: var(--radius);
+  padding: 20px;
+  margin: 16px 0;
+  font-family: 'DM Mono', monospace;
+  font-size: 0.9rem;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+.copy-btn {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  font-family: 'DM Mono', monospace;
+  font-size: 0.7rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  background: #fff;
+  border: 1px solid #ddd4c4;
+  border-radius: 8px;
+  padding: 6px 10px;
+  cursor: pointer;
+  color: var(--color-text);
+}
+
+.copy-btn:hover {
+  border-color: var(--color-accent);
+  color: var(--color-accent);
+}
+
+/* フッター */
+.footer {
+  text-align: center;
+  padding: 40px 24px;
+  font-family: 'DM Mono', monospace;
+  font-size: 0.75rem;
+  opacity: 0.6;
+}
+
+.back-link {
+  display: inline-block;
+  margin-top: 48px;
+  color: var(--color-accent);
+  text-decoration: none;
+  font-weight: 700;
+}

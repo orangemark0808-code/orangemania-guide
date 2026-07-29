@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pomodoro タイマー カスタマイズガイド | OrangeMania</title>
+<link rel="stylesheet" href="../../css/style.css">
+</head>
+<body>
+
+<nav class="navbar">
+  <a href="../../index.html" class="logo">OrangeMania</a>
+  <span class="page-title">Pomodoro タイマー ガイド</span>
+</nav>
+
+<main class="container">
+  <span class="label">Pomodoro Guide</span>
+  <h1>Pomodoro タイマー カスタマイズガイド</h1>
+  <p>このガイドでは、Pomodoro タイマーをAIと一緒にカスタマイズしていく手順を、ステップごとに紹介します。</p>
+
+  <section class="step">
+    <span class="step-number">STEP 0</span>
+    <h2>AIに聞いてみよう</h2>
+    <p>まずAIにこう聞いてみてください。リポジトリの中身を理解してもらうところから始めます。</p>
+    <div class="code-block">
+<button class="copy-btn" onclick="copyCode(this)">Copy</button>このリポジトリを読んで、何ができるか教えてください → [REPO_URL]</div>
+  </section>
+
+  <section class="step">
+    <span class="step-number">STEP 1</span>
+    <h2>外観を変えてみよう</h2>
+    <p>タイトルやアクセントカラー、ボタンの文言などをAIと相談しながら変えていきましょう。変更箇所の例は以下の通りです。</p>
+    <ul>
+      <li>アプリのタイトル名</li>
+      <li>アクセントカラー</li>
+      <li>ボタンや通知メッセージの文言</li>
+    </ul>
+    <p>サンプルプロンプト：</p>
+    <div class="code-block">
+<button class="copy-btn" onclick="copyCode(this)">Copy</button>app.jsの〇〇を△△に変えてください</div>
+  </section>
+
+  <section class="step">
+    <span class="step-number">STEP 2</span>
+    <h2>GitHubに上げてスマホで見てみよう</h2>
+    <p>変更ができたら、GitHub Pagesにデプロイしてスマホから確認してみましょう。詳しい手順は別ページで案内予定ですが、ここでは概要だけ押さえておきます。</p>
+    <p>サンプルプロンプト：</p>
+    <div class="code-block">
+<button class="copy-btn" onclick="copyCode(this)">Copy</button>このアプリをGitHub Pagesで公開したいです。手順を教えてください</div>
+  </section>
+
+  <section class="step">
+    <span class="step-number">STEP 3</span>
+    <h2>通知・機能を試してみよう</h2>
+    <p>実際にPomodoroタイマーを動かして、集中・休憩のサイクルを試してみましょう。通知を使う場合は、事前に許可が必要です。</p>
+    <ul>
+      <li>スマホ：ブラウザの通知許可ダイアログで「許可」を選択</li>
+      <li>PC：ブラウザの通知許可ダイアログで「許可」を選択（設定からいつでも変更可能）</li>
+    </ul>
+  </section>
+
+  <a href="../index.html" class="back-link">← ガイド一覧に戻る</a>
+</main>
+
+<footer class="footer">&copy; OrangeMania</footer>
+
+<script>
+function copyCode(btn) {
+  const text = btn.parentElement.textContent.replace('Copy', '').trim();
+  navigator.clipboard.writeText(text).then(() => {
+    const original = btn.textContent;
+    btn.textContent = 'Copied';
+    setTimeout(() => { btn.textContent = original; }, 1500);
+  });
+}
+</script>
+
+</body>
+</html>
