@@ -421,7 +421,7 @@ a.lp-btn-primary:hover {
 
 .lp-eyebrow {
   font-family: 'JetBrains Mono', monospace;
-  font-size: 14px;
+  font-size: 12px;
   color: #FF7F00;
   font-weight: 600;
   letter-spacing: 0.02em;
@@ -460,7 +460,7 @@ a.lp-btn-primary:hover {
 }
 
 .lp-card p {
-  font-size: 16px;
+  font-size: 14px;
   line-height: 1.6;
   color: oklch(0.2 0.01 60 / 0.6);
   margin: 0;
@@ -494,7 +494,7 @@ a.lp-btn-primary:hover {
 
 .lp-step-num {
   font-family: 'JetBrains Mono', monospace;
-  font-size: 16px;
+  font-size: 14px;
   color: #666666;
   font-weight: 600;
 }
@@ -512,7 +512,7 @@ a.lp-btn-primary:hover {
 }
 
 .lp-step-body p {
-  font-size: 16px;
+  font-size: 14px;
   line-height: 1.6;
   color: oklch(0.2 0.01 60 / 0.6);
   margin: 0;
@@ -548,7 +548,7 @@ a.lp-btn-primary:hover {
 }
 
 .lp-cta-box p {
-  font-size: 17px;
+  font-size: 15px;
   color: rgba(58, 42, 26, 0.7);
   margin: 0;
   max-width: 440px;
@@ -622,14 +622,14 @@ a.lp-btn-cta:hover {
 
 .lp-note-label {
   font-family: 'JetBrains Mono', monospace;
-  font-size: 13px;
+  font-size: 11px;
   letter-spacing: 0.04em;
   font-weight: 600;
   color: #3a3a3a;
 }
 
 .lp-note-text {
-  font-size: 16px;
+  font-size: 14px;
   line-height: 1.7;
   color: oklch(0.2 0.01 60 / 0.65);
   margin: 0;
