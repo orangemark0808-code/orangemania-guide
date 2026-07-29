@@ -529,8 +529,7 @@ a.lp-btn-primary:hover {
 }
 
 .lp-cta-box {
-  background: #FFF3E6;
-  border-radius: 16px;
+  background: transparent;
   padding: 64px 48px;
   display: flex;
   flex-direction: column;
