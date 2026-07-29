@@ -232,7 +232,7 @@ p {
   margin: 0;
   font-family: 'Inter', -apple-system, sans-serif;
   color: oklch(0.2 0.01 60);
-  background: oklch(0.985 0.003 80);
+  background: #FFFFFF;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -261,7 +261,7 @@ p {
   align-items: center;
   justify-content: space-between;
   padding: 20px 48px;
-  background: oklch(0.985 0.003 80 / 0.85);
+  background: rgba(255, 255, 255, 0.85);
   backdrop-filter: blur(10px);
   border-bottom: 1px solid oklch(0.9 0.005 60);
 }
@@ -445,7 +445,7 @@ a.lp-btn-primary:hover {
 }
 
 .lp-card {
-  background: oklch(0.985 0.003 80);
+  background: #FFFFFF;
   padding: 32px;
   display: flex;
   flex-direction: column;
