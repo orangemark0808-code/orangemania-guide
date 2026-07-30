@@ -357,6 +357,10 @@ a.lp-nav-cta:hover {
     font-size: 22px;
     line-height: 1.45;
   }
+
+  .lp-cards {
+    grid-template-columns: 1fr;
+  }
 }
 
 .lp-hero-lead {
@@ -437,11 +441,7 @@ a.lp-btn-primary:hover {
 .lp-cards {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 1px;
-  background: oklch(0.9 0.005 60);
-  border: 1px solid oklch(0.9 0.005 60);
-  border-radius: 12px;
-  overflow: hidden;
+  gap: 24px;
 }
 
 .lp-card {
@@ -450,7 +450,10 @@ a.lp-btn-primary:hover {
   display: flex;
   flex-direction: column;
   gap: 14px;
+  border: 1px solid oklch(0.9 0.005 60);
   border-left: 4px solid #FF7F00;
+  border-radius: 14px;
+  box-shadow: none;
 }
 
 .lp-card h3 {
