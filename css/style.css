@@ -352,17 +352,6 @@ a.lp-nav-cta:hover {
   max-width: 780px;
 }
 
-@media (max-width: 640px) {
-  .lp-hero h1 {
-    font-size: 22px;
-    line-height: 1.45;
-  }
-
-  .lp-cards {
-    grid-template-columns: 1fr;
-  }
-}
-
 .lp-hero-lead {
   font-size: 19px;
   line-height: 1.6;
@@ -638,4 +627,67 @@ a.lp-btn-cta:hover {
   line-height: 1.7;
   color: oklch(0.2 0.01 60 / 0.65);
   margin: 0;
+}
+
+/* ==========================================================================
+   Mobile (max-width: 640px)
+   本ファイル内のモバイル用ルールはすべてこの1ブロックに集約する。
+   通常ルールより前に置くと詳細度が同じ場合に後勝ちで無効化されるため、
+   必ずファイル末尾（最後の@media）に置くこと。
+   ========================================================================== */
+@media (max-width: 640px) {
+  .lp-header {
+    padding: 16px 20px;
+  }
+
+  .lp-logo-text {
+    font-size: 15px;
+  }
+
+  .lp-nav {
+    gap: 12px;
+  }
+
+  .lp-nav-link {
+    font-size: 13px;
+  }
+
+  a.lp-nav-cta {
+    font-size: 13px;
+    padding: 7px 12px;
+  }
+
+  .lp-hero {
+    padding: 60px 20px 60px;
+  }
+
+  .lp-hero h1 {
+    font-size: 22px;
+    line-height: 1.45;
+  }
+
+  .lp-hero-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .lp-hero-actions a {
+    text-align: center;
+  }
+
+  .lp-section,
+  .lp-section-how,
+  .lp-section-cta {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .lp-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .lp-step {
+    grid-template-columns: 40px 1fr;
+    gap: 16px;
+  }
 }
