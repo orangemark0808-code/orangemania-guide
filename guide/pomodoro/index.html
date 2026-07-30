@@ -3,61 +3,104 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Pomodoro タイマー カスタマイズガイド | OrangeMania</title>
+<title>Pomodoro Timer カスタマイズガイド | OrangeMania</title>
 <link rel="stylesheet" href="../../css/style.css">
 </head>
 <body>
 
 <nav class="navbar">
   <a href="../../index.html" class="logo">OrangeMania</a>
-  <span class="page-title">Pomodoro タイマー ガイド</span>
+  <span class="page-title">Pomodoro Timer ガイド</span>
+  <a href="../index.html" class="navbar-link">ガイド一覧</a>
 </nav>
 
 <main class="container">
   <span class="label">Pomodoro Guide</span>
-  <h1>Pomodoro タイマー カスタマイズガイド</h1>
-  <p>このガイドでは、Pomodoro タイマーをAIと一緒にカスタマイズしていく手順を、ステップごとに紹介します。</p>
+  <h1>Pomodoro Timer カスタマイズガイド</h1>
+  <p>このガイドでは、Pomodoro TimerをAIと一緒にカスタマイズしていく手順を、ステップごとに紹介します。迷ったりわからないことはAIに聞きながら進めてください。</p>
 
   <section class="step">
     <span class="step-number">STEP 0</span>
-    <h2>AIに聞いてみよう</h2>
-    <p>まずAIにこう聞いてみてください。リポジトリの中身を理解してもらうところから始めます。</p>
+    <h2>準備する</h2>
+    <p>ダウンロードしたZIPファイルを展開し、わかりやすい場所（デスクトップなど）に置きます。フォルダの置き場所やCodex/Claude Codeの準備方法がわからない場合は、AIに直接聞いてみましょう。</p>
+    <span class="label">Codexを使う場合</span>
     <div class="code-block">
-<button class="copy-btn" onclick="copyCode(this)">Copy</button>このリポジトリを読んで、何ができるか教えてください → [REPO_URL]</div>
+<button class="copy-btn" onclick="copyCode(this)">Copy</button>ダウンロードしたZIPファイルを展開しました。作業用のフォルダはどこに置くのが良いですか？また、Codexを使えるようにする準備の手順も教えてください</div>
+    <span class="label">Claude Codeを使う場合</span>
+    <div class="code-block">
+<button class="copy-btn" onclick="copyCode(this)">Copy</button>ダウンロードしたZIPファイルを展開しました。作業用のフォルダはどこに置くのが良いですか？また、Claude Codeを使えるようにする準備の手順も教えてください</div>
   </section>
 
   <section class="step">
     <span class="step-number">STEP 1</span>
-    <h2>外観を変えてみよう</h2>
-    <p>タイトルやアクセントカラー、ボタンの文言などをAIと相談しながら変えていきましょう。変更箇所の例は以下の通りです。</p>
-    <ul>
-      <li>アプリのタイトル名</li>
-      <li>アクセントカラー</li>
-      <li>ボタンや通知メッセージの文言</li>
-    </ul>
+    <h2>AIに相談する</h2>
+    <p>ChatGPTやClaudeに、アプリの中身について聞いてみましょう。ここで「何ができるアプリか」「どこを変えられそうか」を理解しておくと、この後の作業がスムーズです。</p>
     <p>サンプルプロンプト：</p>
     <div class="code-block">
-<button class="copy-btn" onclick="copyCode(this)">Copy</button>app.jsの〇〇を△△に変えてください</div>
+<button class="copy-btn" onclick="copyCode(this)">Copy</button>このアプリのフォルダの中身を見て、何ができるアプリか教えてください</div>
   </section>
 
   <section class="step">
     <span class="step-number">STEP 2</span>
-    <h2>GitHubに上げてスマホで見てみよう</h2>
-    <p>変更ができたら、GitHub Pagesにデプロイしてスマホから確認してみましょう。詳しい手順は別ページで案内予定ですが、ここでは概要だけ押さえておきます。</p>
+    <h2>変えたいことを相談する</h2>
+    <p>タイトルやアクセントカラー、ボタンの文言など、変えたい部分をAIに伝えましょう。「こう変えたい」と伝えるだけで、Codex/Claude Codeに貼れる指示文を作ってくれます。</p>
+    <span class="label">Codexを使う場合</span>
+    <div class="code-block">
+<button class="copy-btn" onclick="copyCode(this)">Copy</button>タイトルを〇〇に変えたいです。Codexに貼る指示文を作ってください</div>
+    <span class="label">Claude Codeを使う場合</span>
+    <div class="code-block">
+<button class="copy-btn" onclick="copyCode(this)">Copy</button>タイトルを〇〇に変えたいです。Claude Codeに貼る指示文を作ってください</div>
+  </section>
+
+  <section class="step">
+    <span class="step-number">STEP 3</span>
+    <h2>Codex/Claude Codeで実行する</h2>
+    <p>作ってもらった指示文を、CodexまたはClaude Codeに貼り付けると、ファイルが実際に書き換わります。</p>
+  </section>
+
+  <section class="step">
+    <span class="step-number">STEP 4</span>
+    <h2>ローカルで確認する</h2>
+    <p>変更したファイル（index.htmlなど）をブラウザで開いて、見た目を確認しましょう。問題なければ次のステップに進みます。</p>
+  </section>
+
+  <section class="step">
+    <span class="step-number">STEP 5</span>
+    <h2>GitHubにアップロードしてスマホでも確認</h2>
+    <p>変更ができたら、GitHub Pages（無料で使えるWeb公開サービス）を使ってアプリをインターネット上に公開し、スマホからも使えるようにしましょう。公開のやり方がわからなければ、AIに聞きながら進めれば大丈夫です。</p>
     <p>サンプルプロンプト：</p>
     <div class="code-block">
 <button class="copy-btn" onclick="copyCode(this)">Copy</button>このアプリをGitHub Pagesで公開したいです。手順を教えてください</div>
   </section>
 
   <section class="step">
-    <span class="step-number">STEP 3</span>
-    <h2>通知・機能を試してみよう</h2>
-    <p>実際にPomodoroタイマーを動かして、集中・休憩のサイクルを試してみましょう。通知を使う場合は、事前に許可が必要です。</p>
+    <span class="step-number">STEP 6</span>
+    <h2>通知・機能を試す</h2>
+    <p>実際にPomodoro Timerを動かして、集中・休憩のサイクルを試してみましょう。通知を使う場合は、事前に許可が必要です。</p>
     <ul>
       <li>スマホ：ブラウザの通知許可ダイアログで「許可」を選択</li>
       <li>PC：ブラウザの通知許可ダイアログで「許可」を選択（設定からいつでも変更可能）</li>
     </ul>
+    <p><strong>うまく動かないときは、AIに聞きながら確認してみてください。</strong></p>
   </section>
+
+  <div class="tips-box">
+    <span class="step-number">TIPS</span>
+    <h2>わからないことはスクリーンショットで聞こう</h2>
+    <p>うまく伝わらないときは、画面を切り取ってAIに見せるのが一番早いです。</p>
+    <h3>① 画面を切り取る</h3>
+    <ul>
+      <li>Windows：<code>Win + Shift + S</code> で範囲を選択してコピー</li>
+      <li>Mac：<code>Cmd + Shift + 4</code> で範囲を選択してコピー</li>
+    </ul>
+    <h3>② AIチャットに貼り付ける</h3>
+    <p>AIチャットの入力欄をクリックしてカーソルを合わせてから、貼り付けます。</p>
+    <ul>
+      <li>Windows：<code>Ctrl + V</code></li>
+      <li>Mac：<code>Cmd + V</code></li>
+    </ul>
+    <p>これだけで、画像を見ながらアドバイスしてもらえます。</p>
+  </div>
 
   <a href="../index.html" class="back-link">← ガイド一覧に戻る</a>
 </main>
