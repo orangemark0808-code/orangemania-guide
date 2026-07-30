@@ -436,7 +436,7 @@ a.lp-btn-primary:hover {
 
 .lp-cards {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 1px;
   background: oklch(0.9 0.005 60);
   border: 1px solid oklch(0.9 0.005 60);
