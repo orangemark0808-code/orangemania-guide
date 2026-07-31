@@ -1,45 +1,129 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ガイド一覧 | OrangeMania</title>
-<link rel="stylesheet" href="../../css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OrangeMania - AIと一緒に、自分だけのアプリを作る</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="../../css/style.css">
 </head>
-<body>
 
-<header class="lp-header">
-  <a href="../../index.html" class="lp-logo">
-    <div class="lp-logo-mark"></div>
-    <span class="lp-logo-text">Orangemania Guide</span>
-  </a>
-  <nav class="lp-nav">
-    <a href="../../index.html" class="lp-nav-link">トップに戻る</a>
-  </nav>
-</header>
+<body class="lp-body">
 
-<main class="container">
-  <span class="label">Guide</span>
-  <h1>このサイトの使い方</h1>
-  <p>OrangeMania の base アプリを購入したら、このガイドに沿ってAIと一緒にカスタマイズを進められます。制作者はChatGPTとClaudeを使用していますが、どちらのAIでも同じ手順で進めることができます。</p>
-
-  <div class="card tip-highlight">
-    <h3>進め方のコツ：まずはChatGPT/Claudeに相談を</h3>
-    <p>Codex/Claude Codeも会話で進められますが、慣れないうちに思いつきのまま伝えると、意図が曖昧になり結果がブレやすくなることがあります。このサイトでは、<strong>先にChatGPTやClaudeで「何をどう変えたいか」を整理し、具体的な指示文を作ってもらってから</strong>Codex/Claude Codeに貼る進め方を<strong>おすすめしています</strong>。慣れてきたら、Codex/Claude Codeに直接相談する進め方に移っていただいて構いません。</p>
-  </div>
-
-  <h2>アプリ一覧</h2>
-  <div class="card-grid">
-    <div class="card">
-      <h3>Pomodoro Timer</h3>
-      <p>集中と休憩を繰り返すシンプルなタイマーアプリ。色やタイトルを変えて自分仕様にカスタマイズできます。</p>
-      <a href="pomodoro/index.html" class="btn-outline">ガイドを見る</a>
+  <header class="lp-header">
+    <div class="lp-logo">
+      <div class="lp-logo-mark"></div>
+      <span class="lp-logo-text">Orangemania Guide</span>
     </div>
-    <!-- 今後アプリが増えたら、このカードを複製して追加してください -->
-  </div>
-</main>
+    <nav class="lp-nav">
+      <a href="#how" class="lp-nav-link">使い方</a>
+      <a href="#apps" class="lp-nav-cta">アプリ一覧</a>
+    </nav>
+  </header>
 
-<footer class="footer">&copy; OrangeMania</footer>
+  <!-- Hero -->
+  <section class="lp-hero">
+    <div class="lp-hero-badge">
+      <span class="lp-hero-badge-dot"></span>
+      説明書サイト &mdash; v1.0
+    </div>
+    <h1>AIと一緒に自分にちょうどいい<br>WEBアプリを作る体験を届けます</h1>
+    <p class="lp-hero-lead">Orangemania Guide は、ベースとなるアプリをAIとの対話で<br>カスタマイズしながら作っていくための説明書サイトです。</p>
+    <div class="lp-hero-actions">
+      <a href="list/index.html" class="lp-btn-primary">アプリ一覧を見る &rarr;</a>
+      <a href="#how" class="lp-btn-secondary">使い方を見る</a>
+    </div>
+  </section>
+
+  <!-- Usage note -->
+  <section class="lp-section lp-note-section">
+    <div class="lp-note">
+      <span class="lp-note-label">ご利用にあたって</span>
+      <p class="lp-note-text">このガイドはAIとの対話を前提にしています。ChatGPTやClaudeの無料プランでも進められますが、やり取りの回数が多い作業のため、有料プラン（ChatGPT Plus /
+        Claude Pro など）があるとスムーズです。</p>
+    </div>
+  </section>
+
+  <!-- Target readers -->
+  <section id="who" class="lp-section">
+    <div class="lp-section-head">
+      <span class="lp-eyebrow">こんな方へ</span>
+      <h2>こんな方におすすめです</h2>
+    </div>
+    <div class="lp-cards">
+      <div class="lp-card">
+        <h3>前に挫折したことがある</h3>
+        <p>途中で分からなくなって手が止まった。このガイドはステップごとに進め方を示しています。</p>
+      </div>
+      <div class="lp-card">
+        <h3>ChatGPT/Claudeは使うけどコードは未経験</h3>
+        <p>ChatGPTやClaudeで会話はしていても、CodexやClaude Codeのようなコーディング特化ツールは触ったことがない、という方でも大丈夫です。</p>
+      </div>
+      <div class="lp-card">
+        <h3>作りたいものが思いつかない</h3>
+        <p>アイデアがなくても、ベースアプリから始められます。</p>
+      </div>
+      <div class="lp-card">
+        <h3>とりあえず触ってみたい</h3>
+        <p>深く考えずに、まず動かしてみるところから始められます。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- How it works -->
+  <section id="how" class="lp-section-how">
+    <div class="lp-section-head">
+      <span class="lp-eyebrow">使い方</span>
+      <h2>使い方は3ステップです。</h2>
+    </div>
+    <div class="lp-steps">
+      <div class="lp-step">
+        <span class="lp-step-num">01</span>
+        <div class="lp-step-body">
+          <h3>ベースアプリを選ぶ</h3>
+          <p>用意されたアプリ一覧から、気になるものをひとつ選びます。（ラインナップは順次追加していきます）</p>
+        </div>
+      </div>
+      <div class="lp-step">
+        <span class="lp-step-num">02</span>
+        <div class="lp-step-body">
+          <h3>AIと対話しながらカスタマイズ</h3>
+          <p>「ここをこう変えたい」と伝えるだけ。わからないことがあれば、いつでもAIに聞きながら進められます。</p>
+        </div>
+      </div>
+      <div class="lp-step">
+        <span class="lp-step-num">03</span>
+        <div class="lp-step-body">
+          <h3>カスタマイズしたアプリを使う</h3>
+          <p>自分にちょうどいいように変えたアプリを、そのまま使い続けられます。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section id="apps" class="lp-section-cta">
+    <div class="lp-cta-box">
+      <h2>まずはアプリを見てみる。</h2>
+      <p>アイデアがなくても、選ぶところから始められます。</p>
+      <a href="list/index.html" class="lp-btn-cta">アプリ一覧へ &rarr;</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="lp-footer">
+    <div class="lp-footer-brand">
+      <div class="lp-footer-mark"></div>
+      <span class="lp-footer-name">OrangeMania</span>
+    </div>
+    <span class="lp-footer-copy">&copy; 2026 OrangeMania</span>
+  </footer>
 
 </body>
+
 </html>

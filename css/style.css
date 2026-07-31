@@ -641,6 +641,19 @@ a.lp-entry-card:hover {
   margin-top: 4px;
 }
 
+/* Top page (2-entry card gate) */
+.lp-top-main {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 48px 24px;
+}
+
+.lp-top-main .lp-entry-grid {
+  margin: 0 auto;
+}
+
 /* Footer */
 .lp-footer {
   margin-top: auto;
