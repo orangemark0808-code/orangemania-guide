@@ -8,9 +8,10 @@ OrangeMania の説明書サイトです。Cloudflare Pages でホストし、将
 orangemania-guide/
 ├── index.html              # トップページ
 ├── guide/
-│   ├── index.html          # ガイドトップ（baseアプリ共通入口）
-│   └── pomodoro/
-│       └── index.html      # Pomodoroタイマー専用ガイド
+│   └── web/
+│       ├── index.html      # WEBアプリガイドトップ（baseアプリ共通入口）
+│       └── pomodoro/
+│           └── index.html  # Pomodoroタイマー専用ガイド
 ├── css/
 │   └── style.css           # 共通スタイル
 └── README.md

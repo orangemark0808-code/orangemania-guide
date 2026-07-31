@@ -563,6 +563,84 @@ a.lp-btn-cta:hover {
   color: #fff;
 }
 
+/* CTA entry cards (WEB / スマホアプリ) */
+.lp-entry-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  max-width: 720px;
+  margin: 40px auto 0;
+}
+
+.lp-entry-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 28px;
+  border: 1px solid #FF7F00;
+  border-radius: 14px;
+  background: #FFFFFF;
+  box-shadow: none;
+  text-decoration: none;
+  transition: background 0.15s ease;
+}
+
+a.lp-entry-card:hover {
+  background: oklch(0.96 0.005 60);
+}
+
+.lp-entry-card--disabled {
+  opacity: 0.5;
+  cursor: default;
+  border-color: oklch(0.2 0.01 60 / 0.2);
+}
+
+.lp-entry-label {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  letter-spacing: 0.06em;
+  font-weight: 600;
+  color: #FF7F00;
+}
+
+.lp-entry-card--disabled .lp-entry-label {
+  color: oklch(0.2 0.01 60 / 0.4);
+}
+
+.lp-entry-card h3 {
+  font-size: 17px;
+  font-weight: 600;
+  margin: 0;
+  color: #3a2a1a;
+}
+
+.lp-entry-card p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: oklch(0.2 0.01 60 / 0.6);
+  margin: 0;
+}
+
+.lp-entry-link {
+  font-size: 14px;
+  font-weight: 600;
+  color: #FF7F00;
+  margin-top: 4px;
+}
+
+.lp-entry-badge {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  letter-spacing: 0.04em;
+  font-weight: 600;
+  color: oklch(0.2 0.01 60 / 0.45);
+  border: 1px solid oklch(0.2 0.01 60 / 0.25);
+  border-radius: 100px;
+  padding: 4px 10px;
+  margin-top: 4px;
+}
+
 /* Footer */
 .lp-footer {
   margin-top: auto;
@@ -691,6 +769,10 @@ a.lp-btn-cta:hover {
   }
 
   .lp-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .lp-entry-grid {
     grid-template-columns: 1fr;
   }
 
