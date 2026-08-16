@@ -143,6 +143,16 @@ p {
   background: #FFF3E6;
 }
 
+/* 未購入者向け導線ボックス */
+.purchase-notice {
+  background: #FFF3E6;
+  margin: 24px 0 40px;
+}
+
+.purchase-notice p {
+  margin-bottom: 16px;
+}
+
 /* ステップセクション */
 .step {
   margin-top: 56px;
