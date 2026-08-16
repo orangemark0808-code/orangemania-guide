@@ -147,10 +147,12 @@ p {
 .purchase-notice {
   background: #FFF3E6;
   margin: 24px 0 40px;
+  text-align: center;
 }
 
 .purchase-notice p {
   margin-bottom: 16px;
+  text-align: left;
 }
 
 /* ステップセクション */
