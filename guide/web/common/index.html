@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>共通カスタマイズガイド | OrangeMania</title>
+<link rel="stylesheet" href="../../../css/style.css">
+<style>
+  html { scroll-behavior: smooth; }
+
+  .tips-jump-link {
+    display: inline-block;
+    margin: 0 0 32px;
+    color: var(--color-accent);
+    font-weight: 700;
+    text-decoration: none;
+  }
+
+  .tips-jump-link:hover {
+    opacity: 0.85;
+  }
+</style>
+</head>
+<body>
+
+<header class="lp-header">
+  <a href="../index.html" class="lp-logo">
+    <div class="lp-logo-mark"></div>
+    <span class="lp-logo-text">Orangemania Guide</span>
+  </a>
+  <nav class="lp-nav">
+    <a href="../list/" class="lp-nav-link">ガイド一覧</a>
+    <a href="../index.html" class="lp-nav-link">トップに戻る</a>
+  </nav>
+</header>
+
+<main class="container">
+  <span class="label">Common Guide</span>
+  <h1>共通カスタマイズガイド</h1>
+  <p>どのアプリにも共通の、準備から公開までの手順です。迷ったりわからないことはAIに聞きながら進めてください。</p>
+  <a href="#tips-screenshot" class="tips-jump-link">→ わからないことはスクリーンショットで聞こう</a>
+
+  <div class="card purchase-notice">
+    <p>このガイドは購入済みの方向けです。まだの方は、アプリ一覧からご購入いただけます。</p>
+    <a href="../list/" class="btn">アプリ一覧を見る</a>
+  </div>
+
+  <section class="step">
+    <span class="step-number">STEP 0</span>
+    <h2>準備する</h2>
+    <p>ダウンロードしたZIPファイルを展開し、わかりやすい場所（デスクトップなど）に置きます。フォルダの置き場所やCodex/Claude Codeの準備方法がわからない場合は、AIに直接聞いてみましょう。</p>
+    <span class="label">Codexを使う場合</span>
+    <div class="code-block">
+<button class="copy-btn" onclick="copyCode(this)">Copy</button>ダウンロードしたZIPファイルを展開しました。作業用のフォルダはどこに置くのが良いですか？また、Codexを使えるようにする準備の手順も教えてください</div>
+    <span class="label">Claude Codeを使う場合</span>
+    <div class="code-block">
+<button class="copy-btn" onclick="copyCode(this)">Copy</button>ダウンロードしたZIPファイルを展開しました。作業用のフォルダはどこに置くのが良いですか？また、Claude Codeを使えるようにする準備の手順も教えてください</div>
+  </section>
+
+  <section class="step">
+    <span class="step-number">STEP 1</span>
+    <h2>AIに相談する</h2>
+    <p>ChatGPTやClaudeに、アプリの中身について聞いてみましょう。ここで「何ができるアプリか」「どこを変えられそうか」を理解しておくと、この後の作業がスムーズです。</p>
+    <p>サンプルプロンプト：</p>
+    <div class="code-block">
+<button class="copy-btn" onclick="copyCode(this)">Copy</button>このアプリのフォルダの中身を見て、何ができるアプリか教えてください</div>
+  </section>
+
+  <section class="step">
+    <span class="step-number">STEP 2</span>
+    <h2>変えたいことを相談する</h2>
+    <p>タイトルやアクセントカラー、ボタンの文言など、変えたい部分をAIに伝えましょう。「こう変えたい」と伝えるだけで、Codex/Claude Codeに貼れる指示文を作ってくれます。</p>
+    <span class="label">Codexを使う場合</span>
+    <div class="code-block">
+<button class="copy-btn" onclick="copyCode(this)">Copy</button>タイトルを〇〇に変えたいです。Codexに貼る指示文を作ってください</div>
+    <span class="label">Claude Codeを使う場合</span>
+    <div class="code-block">
+<button class="copy-btn" onclick="copyCode(this)">Copy</button>タイトルを〇〇に変えたいです。Claude Codeに貼る指示文を作ってください</div>
+  </section>
+
+  <section class="step">
+    <span class="step-number">STEP 3</span>
+    <h2>Codex/Claude Codeで実行する</h2>
+    <p>作ってもらった指示文を、CodexまたはClaude Codeに貼り付けると、ファイルが実際に書き換わります。</p>
+  </section>
+
+  <section class="step">
+    <span class="step-number">STEP 4</span>
+    <h2>ローカルで確認する</h2>
+    <p>変更したファイル（index.htmlなど）をブラウザで開いて、見た目を確認しましょう。問題なければ次のステップに進みます。</p>
+  </section>
+
+  <section class="step">
+    <span class="step-number">STEP 5</span>
+    <h2>GitHubにアップロードしてスマホでも確認</h2>
+    <p>変更ができたら、GitHub Pages（無料で使えるWeb公開サービス）を使ってアプリをインターネット上に公開し、スマホからも使えるようにしましょう。公開のやり方がわからなければ、AIに聞きながら進めれば大丈夫です。</p>
+    <p>サンプルプロンプト：</p>
+    <div class="code-block">
+<button class="copy-btn" onclick="copyCode(this)">Copy</button>このアプリをGitHub Pagesで公開したいです。手順を教えてください</div>
+  </section>
+
+  <div class="card">
+    <h3>このアプリならではの試し方</h3>
+    <p>このアプリならではの試し方・変更例は、アプリ別ガイドをご覧ください。</p>
+    <a href="../apps/" class="btn">アプリ別ガイドを見る</a>
+  </div>
+
+  <div class="tips-box" id="tips-screenshot">
+    <span class="step-number">TIPS</span>
+    <h2>わからないことはスクリーンショットで聞こう</h2>
+    <p>うまく伝わらないときは、画面を切り取ってAIに見せるのが一番早いです。</p>
+    <h3>① 画面を切り取る</h3>
+    <ul>
+      <li>Windows：<code>Win + Shift + S</code> で範囲を選択してコピー</li>
+      <li>Mac：<code>Cmd + Shift + 4</code> で範囲を選択してコピー</li>
+    </ul>
+    <h3>② AIチャットに貼り付ける</h3>
+    <p>AIチャットの入力欄をクリックしてカーソルを合わせてから、貼り付けます。</p>
+    <ul>
+      <li>Windows：<code>Ctrl + V</code></li>
+      <li>Mac：<code>Cmd + V</code></li>
+    </ul>
+    <p>これだけで、画像を見ながらアドバイスしてもらえます。</p>
+  </div>
+
+  <a href="../list/" class="back-link">← ガイド一覧に戻る</a>
+</main>
+
+<footer class="lp-footer">
+  <div class="lp-footer-brand">
+    <div class="lp-footer-mark"></div>
+    <span class="lp-footer-name">OrangeMania</span>
+  </div>
+  <span class="lp-footer-copy">&copy; 2026 OrangeMania</span>
+</footer>
+
+<script>
+function copyCode(btn) {
+  const text = btn.parentElement.textContent.replace('Copy', '').trim();
+  navigator.clipboard.writeText(text).then(() => {
+    const original = btn.textContent;
+    btn.textContent = 'Copied';
+    setTimeout(() => { btn.textContent = original; }, 1500);
+  });
+}
+</script>
+
+</body>
+</html>

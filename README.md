@@ -10,8 +10,14 @@ orangemania-guide/
 ├── guide/
 │   └── web/
 │       ├── index.html      # WEBアプリガイドトップ（baseアプリ共通入口）
-│       └── pomodoro/
-│           └── index.html  # Pomodoroタイマー専用ガイド
+│       ├── list/
+│       │   ├── index.html  # アプリ一覧
+│       │   └── pomodoro/
+│       │       └── index.html  # 旧URL（apps/#pomodoro へ自動移動）
+│       ├── common/
+│       │   └── index.html  # 共通カスタマイズガイド
+│       └── apps/
+│           └── index.html  # アプリ別ガイド
 ├── css/
 │   └── style.css           # 共通スタイル
 └── README.md

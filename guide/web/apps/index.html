@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>アプリ別ガイド | OrangeMania</title>
+<link rel="stylesheet" href="../../../css/style.css">
+<style>
+  html { scroll-behavior: smooth; }
+
+  .app-section { scroll-margin-top: 96px; }
+
+  .tips-jump-link {
+    display: inline-block;
+    margin: 0 0 32px;
+    color: var(--color-accent);
+    font-weight: 700;
+    text-decoration: none;
+  }
+
+  .tips-jump-link:hover {
+    opacity: 0.85;
+  }
+</style>
+</head>
+<body>
+
+<header class="lp-header">
+  <a href="../index.html" class="lp-logo">
+    <div class="lp-logo-mark"></div>
+    <span class="lp-logo-text">Orangemania Guide</span>
+  </a>
+  <nav class="lp-nav">
+    <a href="../list/" class="lp-nav-link">ガイド一覧</a>
+    <a href="../index.html" class="lp-nav-link">トップに戻る</a>
+  </nav>
+</header>
+
+<main class="container">
+  <span class="label">App Guide</span>
+  <h1>アプリ別ガイド</h1>
+  <p>アプリごとの試し方・変更例をまとめています。</p>
+
+  <div class="card tip-highlight">
+    <h3>準備から公開までの手順は共通カスタマイズガイドへ</h3>
+    <p>準備、AIへの相談、実行、確認、公開までの手順は、どのアプリにも共通です。</p>
+    <a href="../common/" class="btn">共通カスタマイズガイドを開く</a>
+  </div>
+
+  <h2>アプリ目次</h2>
+  <ul>
+    <li><a href="#pomodoro">Pomodoro Timer</a></li>
+    <!-- 新アプリ追加時は、ここに目次の項目を追加する -->
+  </ul>
+
+  <section class="app-section" id="pomodoro">
+    <span class="label">Pomodoro Timer</span>
+    <h2>Pomodoro Timer</h2>
+    <p>準備から公開までの手順は、<a href="../common/">共通カスタマイズガイド</a>をご覧ください。</p>
+
+    <div class="card purchase-notice">
+      <p>このガイドは購入済みの方向けです。まだの方はこちらからご購入いただけます。</p>
+      <a href="https://note.com/orangemania_wdp/n/n3e094d4dc335" class="btn" target="_blank" rel="noopener noreferrer">購入する</a>
+    </div>
+
+    <h3>このアプリで変えてみよう</h3>
+    <p>タイトルやアクセントカラー、ボタンの文言など、変えたい部分をAIに伝えましょう。「こう変えたい」と伝えるだけで、Codex/Claude Codeに貼れる指示文を作ってくれます。</p>
+    <span class="label">Codexを使う場合</span>
+    <div class="code-block">
+<button class="copy-btn" onclick="copyCode(this)">Copy</button>タイトルを〇〇に変えたいです。Codexに貼る指示文を作ってください</div>
+    <span class="label">Claude Codeを使う場合</span>
+    <div class="code-block">
+<button class="copy-btn" onclick="copyCode(this)">Copy</button>タイトルを〇〇に変えたいです。Claude Codeに貼る指示文を作ってください</div>
+
+    <h3>最後に：動かして試してみよう</h3>
+    <p>実際にPomodoro Timerを動かして、集中・休憩のサイクルを試してみましょう。通知を使う場合は、事前に許可が必要です。</p>
+    <ul>
+      <li>スマホ：ブラウザの通知許可ダイアログで「許可」を選択</li>
+      <li>PC：ブラウザの通知許可ダイアログで「許可」を選択（設定からいつでも変更可能）</li>
+    </ul>
+    <p><strong>うまく動かないときは、AIに聞きながら確認してみてください。</strong></p>
+  </section>
+
+  <!--
+    【新アプリ追加用ひな形】
+    新アプリ追加時はこの section をコピーして id・見出し・内容を書き換える。目次にも項目を追加する。
+
+  <section class="app-section" id="app-id">
+    <span class="label">App Name</span>
+    <h2>App Name</h2>
+    <p>準備から公開までの手順は、<a href="../common/">共通カスタマイズガイド</a>をご覧ください。</p>
+    <div class="card purchase-notice">
+      <p>このガイドは購入済みの方向けです。まだの方はこちらからご購入いただけます。</p>
+      <a href="購入ページのURL" class="btn" target="_blank" rel="noopener noreferrer">購入する</a>
+    </div>
+    <h3>このアプリで変えてみよう</h3>
+    <p>変更例</p>
+    <h3>最後に：動かして試してみよう</h3>
+    <p>動作確認の案内</p>
+  </section>
+  -->
+
+  <a href="../list/" class="back-link">← ガイド一覧に戻る</a>
+</main>
+
+<footer class="lp-footer">
+  <div class="lp-footer-brand">
+    <div class="lp-footer-mark"></div>
+    <span class="lp-footer-name">OrangeMania</span>
+  </div>
+  <span class="lp-footer-copy">&copy; 2026 OrangeMania</span>
+</footer>
+
+<script>
+function copyCode(btn) {
+  const text = btn.parentElement.textContent.replace('Copy', '').trim();
+  navigator.clipboard.writeText(text).then(() => {
+    const original = btn.textContent;
+    btn.textContent = 'Copied';
+    setTimeout(() => { btn.textContent = original; }, 1500);
+  });
+}
+</script>
+
+</body>
+</html>
