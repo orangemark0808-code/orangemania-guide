@@ -12,22 +12,36 @@
     border: none;
     border-radius: var(--radius);
     box-shadow: none;
-    padding: 40px 32px;
+    padding: 16px;
     margin: 32px 0 40px;
   }
-  .common-guide h2 { margin: 8px 0 16px; color: #FAF8F4; }
-  .common-guide .common-guide-lead { font-weight: 800; font-size: 1.1rem; margin-bottom: 12px; color: #FAF8F4; text-wrap: balance; }
-  .common-guide p { line-height: 1.7; opacity: 0.85; }
-  .common-guide p.common-guide-lead { opacity: 1; }
+  .common-guide h2 { margin: 2px 0 4px; font-size: 1.25rem; line-height: 1.5; color: #FAF8F4; }
+  .common-guide p { line-height: 1.7; margin: 0 0 4px; font-size: 0.95rem; color: #FAF8F4; }
+  .common-guide .common-guide-lead strong { font-weight: 800; }
+  .common-guide .common-guide-lead strong, .common-guide .common-guide-sub { display: inline-block; }
+  .common-guide .common-guide-sub { opacity: 0.85; }
   .common-guide .common-guide-flow {
     font-family: 'DM Mono', monospace;
     font-size: 0.8rem;
-    margin: 0 0 24px;
+    margin: 0 0 12px;
+    opacity: 0.85;
     text-wrap: balance;
   }
   .common-guide .common-guide-flow span { white-space: nowrap; }
+  @media (max-width: 640px) { .common-guide .common-guide-lead { font-size: 0.85rem; letter-spacing: 0; } }
+  @media (min-width: 641px) {
+    .common-guide {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 32px;
+      padding: 16px 20px;
+    }
+    .common-guide .common-guide-flow { margin-bottom: 0; }
+    .common-guide .btn { flex-shrink: 0; }
+  }
+  .tip-highlight p:last-child { margin-bottom: 0; }
   .list-note { font-size: 0.875rem; opacity: 0.8; margin: -8px 0 8px; }
-  @media (max-width: 640px) { .common-guide { padding: 32px 20px; } .common-guide .common-guide-lead { font-size: 1.05rem; } }
 </style>
 </head>
 <body>
@@ -48,11 +62,12 @@
   <p>OrangeMania の base アプリを購入したら、このガイドに沿ってAIと一緒にカスタマイズを進められます。制作者はChatGPTとClaudeを使用していますが、どちらのAIでも同じ手順で進めることができます。</p>
 
   <section class="common-guide">
+    <div class="common-guide-body">
     <span class="label">START HERE</span>
     <h2>共通カスタマイズガイド</h2>
-    <p class="common-guide-lead">はじめに、こちらをお読みください。</p>
-    <p>準備から公開まで、どのアプリにも共通の手順です。各アプリのカスタマイズ方法を見る前に、まずここで流れをつかんでください。</p>
+    <p class="common-guide-lead"><strong>はじめに、こちらをお読みください。</strong><span class="common-guide-sub">準備から公開までの共通の手順です。</span></p>
     <p class="common-guide-flow"><span>準備 →</span> <span>AIに相談 →</span> <span>変更 →</span> <span>実行 →</span> <span>確認 →</span> <span>公開</span></p>
+    </div>
     <a href="../common/" class="btn">先にガイドを読む</a>
   </section>
 
