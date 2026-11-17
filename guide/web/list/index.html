@@ -5,6 +5,27 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>WEBアプリ一覧 | OrangeMania</title>
 <link rel="stylesheet" href="../../../css/style.css">
+<style>
+  .common-guide {
+    background: #FFF3E6;
+    border: none;
+    border-radius: var(--radius);
+    box-shadow: none;
+    padding: 40px 32px;
+    margin: 40px 0 56px;
+  }
+  .common-guide h2 { margin: 8px 0 16px; }
+  .common-guide .common-guide-lead { font-weight: 800; font-size: 1.1rem; margin-bottom: 12px; }
+  .common-guide p { line-height: 1.7; }
+  .common-guide .common-guide-flow {
+    font-family: 'DM Mono', monospace;
+    font-size: 0.8rem;
+    margin: 0 0 24px;
+    overflow-wrap: anywhere;
+  }
+  .list-note { font-size: 0.875rem; opacity: 0.8; margin: -8px 0 8px; }
+  @media (max-width: 640px) { .common-guide { padding: 32px 20px; } }
+</style>
 </head>
 <body>
 
@@ -28,7 +49,17 @@
     <p>Codex/Claude Codeも会話で進められますが、慣れないうちに思いつきのまま伝えると、意図が曖昧になり結果がブレやすくなることがあります。このサイトでは、<strong>先にChatGPTやClaudeで「何をどう変えたいか」を整理し、具体的な指示文を作ってもらってから</strong>Codex/Claude Codeに貼る進め方を<strong>おすすめしています</strong>。慣れてきたら、Codex/Claude Codeに直接相談する進め方に移っていただいて構いません。</p>
   </div>
 
+  <section class="common-guide">
+    <span class="label">START HERE</span>
+    <h2>共通カスタマイズガイド</h2>
+    <p class="common-guide-lead">はじめに、こちらをお読みください。</p>
+    <p>準備から公開まで、どのアプリにも共通の手順です。各アプリのカスタマイズ方法を見る前に、まずここで流れをつかんでください。</p>
+    <p class="common-guide-flow">準備 → AIに相談 → 変更 → 実行 → 確認 → 公開</p>
+    <a href="../common/" class="btn">先にガイドを読む</a>
+  </section>
+
   <h2>アプリ一覧</h2>
+  <p class="list-note">各アプリのカスタマイズ方法は、共通カスタマイズガイドを読んでからご覧ください。</p>
   <div class="card-grid">
     <div class="card">
       <h3>Pomodoro Timer</h3>
@@ -39,17 +70,6 @@
       </div>
     </div>
     <!-- 今後アプリが増えたら、このカードを複製して追加してください -->
-  </div>
-
-  <h2>共通カスタマイズガイド</h2>
-  <div class="card-grid">
-    <div class="card">
-      <h3>共通カスタマイズガイド</h3>
-      <p>準備から公開まで、どのアプリにも共通の手順です。</p>
-      <div class="card-actions">
-        <a href="../common/" class="btn">ガイドを開く</a>
-      </div>
-    </div>
   </div>
 </main>
 
